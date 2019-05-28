@@ -19,7 +19,6 @@
 }
 
 .navigation{
-   width: 95%;
    background: none;
    display: flex;
    justify-content: center;
@@ -74,7 +73,7 @@
 .links{
 	display: flex;
 	list-style: none;
-  flex-wrap: wrap;   
+  flex-wrap: nowrap;   
 }
 
 .link{
@@ -88,7 +87,7 @@
  }
 
 li:last-child{
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 li{	
@@ -103,16 +102,8 @@ input[type=checkbox]{
   visibility:hidden;
 }
 
-@media screen and (min-width: 860px) and (max-width: 1188px){
-
-  .navigation{
-    width: 800px;
-  }
-}
-
 @media screen and (max-width: 859px){
   .navigation{
-    width: 100%;
     justify-content: space-around;
   }  
   .links{
@@ -199,7 +190,7 @@ input[type=checkbox]{
   font-size: 30px;
   line-height:60px;
   text-align: center;
-  margin: 130px auto;
+  margin: 100px auto 0;
 }
 
 .advcontent{
@@ -214,7 +205,6 @@ span{
   text-decoration: underline;
   color: #ffda00;
 }
-
 
 .row{
   margin: 160px 50px;
@@ -269,8 +259,6 @@ span{
   flex-direction: column;
   align-items: center;
   margin: 60px auto 60px;
-
-
 }
 
 .statistics img{
@@ -814,7 +802,6 @@ span{
   font-size: 15px;
   margin: 20px auto;
   font-weight: bold;
-
 }
 
 #form{
@@ -827,9 +814,9 @@ span{
 .inline{
   background: none;
   display: flex;
-  color:white;
- 
-  }
+  color:white; 
+}
+
 .buttonSend{
   margin: 0;
   height: 50px;
@@ -875,8 +862,8 @@ padding-left: 15px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
+
 .footer p{
   color:white;
   font-size: 13px;
@@ -916,12 +903,10 @@ padding-left: 15px;
   display: none;
 }
 
-
 .active { 
   background-color: #85878c;
   width: 100%;
 }
-
 
 .footer .socialnetworks > i {
   font-size: 35px;
@@ -930,7 +915,7 @@ padding-left: 15px;
 }
 
 .footer .socialnetworks > i:hover{
-    color:  #ffda00;
-    transition: 0.7s;
+  color:  #ffda00;
+  transition: 0.7s;
 }
 
